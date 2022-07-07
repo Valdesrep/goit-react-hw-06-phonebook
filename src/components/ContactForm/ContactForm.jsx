@@ -11,7 +11,6 @@ function ContactForm() {
 
   const onFormSubmit = event => {
     event.preventDefault();
-    console.log(name, number);
     dispatch(addContact(name, number));
     setName('');
     setNumber('');
